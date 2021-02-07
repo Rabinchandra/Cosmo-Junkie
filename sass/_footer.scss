@@ -1,0 +1,22 @@
+.footer {
+  background: $primary-dark-color;
+  padding: 0 2em;
+  margin-top: 2em;
+
+  h4 {
+    grid-column: 1/5;
+  }
+
+  &__social-links {
+    grid-column: 6/9;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    img {
+      margin: 0 10px;
+      width: 25px;
+    }
+  }
+}
