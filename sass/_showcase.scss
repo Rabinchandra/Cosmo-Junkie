@@ -1,0 +1,15 @@
+.showcase {
+  padding: 0 1em;
+
+  &__text {
+    grid-column: 1/5;
+  }
+
+  &__image {
+    grid-column: 6/9;
+
+    img {
+      width: 200%;
+    }
+  }
+}

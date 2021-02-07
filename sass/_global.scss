@@ -1,0 +1,61 @@
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 1.4em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+h4 {
+  font-size: 1.1em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.lead {
+  opacity: 0.8;
+}
+
+.btn {
+  outline: none;
+  color: $secondary-color;
+  border: 2px solid $secondary-color;
+  padding: 0.8em 1em;
+  border-radius: 12px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+// Grid
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}

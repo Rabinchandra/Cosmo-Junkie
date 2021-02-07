@@ -1,0 +1,29 @@
+.skills {
+  padding: 0 1em;
+
+  h4 {
+    text-align: center;
+  }
+
+  ul {
+    gap: 1em;
+    text-align: center;
+
+    li {
+      @include alignCenter;
+
+      text-align: center;
+      background: $primary-dark-color;
+      padding: 1.3em 0;
+      grid-column: span 4;
+
+      img {
+        width: 50%;
+      }
+    }
+  }
+
+  p {
+    text-align: center;
+  }
+}

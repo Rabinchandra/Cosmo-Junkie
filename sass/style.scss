@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Rubik Regular';
+  src: url(../assets/fonts/Rubik-Regular.ttf);
+}
+
+@import 'variables';
+@import 'global';
+@import 'utilities';
+
+// Component styles
+@import 'navbar';
+@import 'showcase';
+@import 'projects';
+@import 'skills';
+
+* {
+  //   border: 1px solid red;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 17px;
+  font-family: 'Rubik Regular', Arial, Helvetica, sans-serif;
+  background-color: $primary-color;
+  color: #fff;
+  overflow-x: hidden;
+}
