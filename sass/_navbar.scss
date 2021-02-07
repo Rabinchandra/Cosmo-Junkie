@@ -1,5 +1,6 @@
 .nav {
-  padding: 0 1em;
+  padding: $mobile-padding;
+
   &__logo {
     grid-column: 1/5;
     border-bottom: 2px solid $secondary-color;
@@ -15,6 +16,23 @@
 
     li {
       margin-left: 10px;
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-size) {
+  .nav {
+    padding: $tablet-padding;
+
+    &__logo {
+      grid-column: 1/4;
+    }
+    &__links {
+      display: flex;
     }
   }
 }

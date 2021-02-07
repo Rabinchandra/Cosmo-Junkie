@@ -1,20 +1,18 @@
 .projects {
   margin-top: 3em;
-  padding: 0 1em;
+  padding: $mobile-padding;
 
   h4 {
     text-align: center;
     margin-bottom: 3em;
   }
 
-  div {
-    grid-column: span 8;
-
-    margin-bottom: 2.5em;
-
+  .grid {
     div {
       display: flex;
       align-items: center;
+      grid-column: span 8;
+      margin-bottom: 2.5em;
 
       img {
         width: 40%;
@@ -24,6 +22,32 @@
       p {
         text-align: center;
         flex: 1;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-size) {
+  .projects {
+    margin-top: 7em;
+    padding: $tablet-padding;
+
+    .grid {
+      div {
+        // border: 1px solid #fff;
+        flex-direction: column;
+        margin-bottom: 1.1em;
+      }
+
+      div:nth-child(1) {
+        grid-column: span 4;
+      }
+      div:nth-child(2) {
+        grid-column: span 4;
+      }
+      div:nth-child(3) {
+        grid-column: 3/7;
+        grid-row: 2;
       }
     }
   }

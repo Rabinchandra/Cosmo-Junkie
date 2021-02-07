@@ -1,5 +1,5 @@
 .skills {
-  padding: 0 1em;
+  padding: $mobile-padding;
 
   h4 {
     text-align: center;
@@ -26,5 +26,25 @@
   p {
     margin-top: 2em;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: $tablet-size) {
+  .skills {
+    padding: $tablet-padding;
+
+    ul {
+      li {
+        grid-column: span 3;
+      }
+
+      li:nth-child(1) {
+        grid-column: 2 / span 3;
+      }
+      li:nth-child(3) {
+        grid-column: 2 / span 3;
+        grid-row: 2;
+      }
+    }
   }
 }
