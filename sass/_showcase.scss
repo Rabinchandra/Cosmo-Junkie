@@ -1,6 +1,4 @@
 .showcase {
-  padding: $mobile-padding;
-
   &__text {
     grid-column: 1/5;
   }
@@ -17,7 +15,6 @@
 @media screen and (min-width: $tablet-size) {
   .showcase {
     margin: 3em 0;
-    padding: $tablet-padding;
 
     &__image {
       img {

@@ -29,3 +29,15 @@ body {
   color: #fff;
   overflow-x: hidden;
 }
+
+.container {
+  padding: $mobile-padding;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: $tablet-size) {
+  .container {
+    padding: $tablet-padding;
+  }
+}

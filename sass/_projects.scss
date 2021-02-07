@@ -1,6 +1,5 @@
 .projects {
   margin-top: 3em;
-  padding: $mobile-padding;
 
   h4 {
     text-align: center;
@@ -30,7 +29,6 @@
 @media screen and (min-width: $tablet-size) {
   .projects {
     margin-top: 7em;
-    padding: $tablet-padding;
 
     .grid {
       div {
