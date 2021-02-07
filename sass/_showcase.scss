@@ -23,3 +23,17 @@
     }
   }
 }
+
+@media screen and (min-width: $desktop-size) {
+  .showcase {
+    &__text {
+      @include alignCenter;
+      align-items: start;
+      text-align: left;
+
+      .btn {
+        margin-top: 1.5em;
+      }
+    }
+  }
+}
